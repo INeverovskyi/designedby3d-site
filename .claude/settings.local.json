@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx create-next-app@latest:*)",
+      "Bash(mv designedby3d-temp/* designedby3d-temp/.* .)",
+      "Bash(rm -rf designedby3d-temp)",
+      "Bash(npm install:*)",
+      "Bash(npx shadcn@latest init -y --defaults)"
+    ]
+  }
+}
