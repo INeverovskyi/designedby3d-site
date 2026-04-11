@@ -5,7 +5,12 @@
       "Bash(mv designedby3d-temp/* designedby3d-temp/.* .)",
       "Bash(rm -rf designedby3d-temp)",
       "Bash(npm install:*)",
-      "Bash(npx shadcn@latest init -y --defaults)"
+      "Bash(npx shadcn@latest init -y --defaults)",
+      "Bash(npx shadcn@latest add card sheet input textarea accordion badge separator -y)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(npx lucide-react:*)",
+      "Bash(npm ls:*)",
+      "Bash(npm run:*)"
     ]
   }
 }
