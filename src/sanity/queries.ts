@@ -1,5 +1,9 @@
 import { sanityClient } from "./client"
 
+const PRODUCT_BY_SLUG_QUERY = `*[_type == "product" && slug.current == $slug][0] {
+  _id, name, slug, price, salePrice, category, image, description, inStock, featured
+}`
+
 const PRODUCTS_QUERY = `*[_type == "product"] | order(_createdAt desc) {
   _id, name, slug, price, salePrice, category, image, description, inStock, featured
 }`
@@ -19,6 +23,15 @@ export interface SanityProduct {
   description?: string
   inStock: boolean
   featured: boolean
+}
+
+export async function getSingleProduct(slug: string): Promise<SanityProduct | null> {
+  if (!sanityClient) return null
+  try {
+    return await sanityClient.fetch(PRODUCT_BY_SLUG_QUERY, { slug })
+  } catch {
+    return null
+  }
 }
 
 export async function getAllProducts(): Promise<SanityProduct[]> {

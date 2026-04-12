@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
 import Image from "next/image"
+import Link from "next/link"
 import { getAllProducts, type SanityProduct } from "@/sanity/queries"
 import { urlFor } from "@/sanity/client"
 import { Badge } from "@/components/ui/badge"
@@ -25,8 +26,8 @@ function ProductCard({ product }: { product: SanityProduct }) {
     : null
 
   return (
-    <div className="group block">
-      <div className="relative overflow-hidden rounded-xl bg-card border border-border hover:border-primary/30 transition-all duration-300">
+    <Link href={`/products/${product.slug.current}`} className="group block">
+      <div className="relative overflow-hidden rounded-xl bg-card border border-border hover:border-primary/30 transition-all duration-300 h-full cursor-pointer">
         {/* Image */}
         <div className="aspect-square bg-gradient-to-br from-card to-muted relative overflow-hidden">
           {imageUrl ? (
@@ -92,7 +93,7 @@ function ProductCard({ product }: { product: SanityProduct }) {
           </div>
         </div>
       </div>
-    </div>
+    </Link>
   )
 }
 
