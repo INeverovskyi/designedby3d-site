@@ -156,12 +156,33 @@ NEXT_PUBLIC_SITE_URL=https://designedby3d-site.vercel.app
 |----------|-------|--------------|
 | `NEXT_PUBLIC_SANITY_PROJECT_ID` | `nmltjuqs` | All |
 | `NEXT_PUBLIC_SANITY_DATASET` | `production` | All |
-| `LIQPAY_PUBLIC_KEY` | *(sandbox key from LiqPay dashboard)* | All |
-| `LIQPAY_PRIVATE_KEY` | *(sandbox key from LiqPay dashboard)* | All |
+| `LIQPAY_PUBLIC_KEY` | `sandbox_i23344335661` | All |
+| `LIQPAY_PRIVATE_KEY` | `sandbox_7nNIT60MH1Ozdr0wnRaoh1qZtfWYtCz4euNg10A3` | All |
 | `NEXT_PUBLIC_SITE_URL` | `https://designedby3d-site.vercel.app` | All |
 
-> **Note:** LiqPay keys are stored only on Vercel (not in `.env.local`). To find them: Vercel → Project Settings → Environment Variables.
-> Sandbox keys — for testing. Live keys — from [liqpay.ua/admin](https://www.liqpay.ua/admin/) after merchant verification.
+---
+
+## API Keys & Credentials
+
+### Sanity CMS
+| Credential | Value |
+|------------|-------|
+| Project ID | `nmltjuqs` |
+| Dataset | `production` |
+| Write Token | `sk3zVSqosXAAMVzRccZV7w51CUefejHd20k44u4AxhBqUmZKcLfCM3uEklZt3GkRl5gSVmmI0FbtYhsH7cFgxVmpblzS5n9dUs8tsackrtvQNJl7wvXk8gKnfp4VF9WMOL4gWxhs2dGkBbJidwUZygSF9RzggJm3qNXxgcBrsnxY0JDTfnbT` |
+| Manage URL | https://www.sanity.io/manage |
+
+### LiqPay (Sandbox — тестовий режим)
+| Credential | Value |
+|------------|-------|
+| Public Key | `sandbox_i23344335661` |
+| Private Key | `sandbox_7nNIT60MH1Ozdr0wnRaoh1qZtfWYtCz4euNg10A3` |
+| Dashboard | https://www.liqpay.ua/admin/ |
+
+> **Важливо:** Для переходу на live-режим потрібно:
+> 1. Верифікувати мерчант акаунт в LiqPay
+> 2. Замінити sandbox ключі на live ключі (на Vercel та в `.env.local`)
+> 3. Зареєструвати домен в кабінеті LiqPay
 
 ---
 
