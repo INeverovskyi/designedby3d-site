@@ -55,7 +55,16 @@
       "Bash(powershell.exe -Command \"Stop-Process -Id 13996 -Force -ErrorAction SilentlyContinue; Write-Output 'done'\")",
       "Bash(powershell.exe -Command \"Get-NetTCPConnection -LocalPort 3000 -State Listen | Select-Object -ExpandProperty OwningProcess\")",
       "Bash(powershell.exe -Command \"Stop-Process -Id 14160 -Force; Write-Output 'killed'\")",
-      "Bash(vercel whoami:*)"
+      "Bash(vercel whoami:*)",
+      "Bash(node -e ':*)",
+      "Bash(npx sanity:*)",
+      "Bash(curl -s \"https://api.sanity.io/v2021-06-07/projects/ps0auzl9/acl\" -H \"Authorization: Bearer skF135n8zar8erJCw7vx8Fn2pQX9PV0eC4fDP3YS4oFBpRO5HVbDIOicpTk7X7c598klXYhmv4KD2hw2QnPZQoJqJAstIwU6jQeTjW2iOQsTE9mVk0JcgkU01FQ6dxRapUeTLVYZtaHvI6pThqTLmWDIaZynKR3s2LFZPsxWBygJK66SUt7q\")",
+      "Bash(curl -s -X POST https://api.sanity.io/v2021-06-07/invitations/project/ps0auzl9 -H 'Authorization: Bearer skF135n8zar8erJCw7vx8Fn2pQX9PV0eC4fDP3YS4oFBpRO5HVbDIOicpTk7X7c598klXYhmv4KD2hw2QnPZQoJqJAstIwU6jQeTjW2iOQsTE9mVk0JcgkU01FQ6dxRapUeTLVYZtaHvI6pThqTLmWDIaZynKR3s2LFZPsxWBygJK66SUt7q' -H 'Content-Type: application/json' -d '{\"email\":\"crazyx1995@gmail.com\",\"role\":\"administrator\"}')",
+      "Bash(curl -s \"https://api.sanity.io/v2021-06-07/projects/nmltjuqs\" -H \"Authorization: Bearer sk3zVSqosXAAMVzRccZV7w51CUefejHd20k44u4AxhBqUmZKcLfCM3uEklZt3GkRl5gSVmmI0FbtYhsH7cFgxVmpblzS5n9dUs8tsackrtvQNJl7wvXk8gKnfp4VF9WMOL4gWxhs2dGkBbJidwUZygSF9RzggJm3qNXxgcBrsnxY0JDTfnbT\")",
+      "Bash(powershell.exe -Command \"Get-NetTCPConnection -LocalPort 3000 -State Listen -ErrorAction SilentlyContinue | Select-Object -ExpandProperty OwningProcess\")",
+      "Bash(powershell.exe -Command \"Stop-Process -Id 20660 -Force; Write-Output 'killed'\")",
+      "Bash(curl -s \"https://api.sanity.io/v2021-06-07/projects/nmltjuqs/cors\" -H \"Authorization: Bearer sk3zVSqosXAAMVzRccZV7w51CUefejHd20k44u4AxhBqUmZKcLfCM3uEklZt3GkRl5gSVmmI0FbtYhsH7cFgxVmpblzS5n9dUs8tsackrtvQNJl7wvXk8gKnfp4VF9WMOL4gWxhs2dGkBbJidwUZygSF9RzggJm3qNXxgcBrsnxY0JDTfnbT\")",
+      "Bash(curl -s -X POST https://api.sanity.io/v2021-06-07/projects/nmltjuqs/cors -H 'Authorization: Bearer sk3zVSqosXAAMVzRccZV7w51CUefejHd20k44u4AxhBqUmZKcLfCM3uEklZt3GkRl5gSVmmI0FbtYhsH7cFgxVmpblzS5n9dUs8tsackrtvQNJl7wvXk8gKnfp4VF9WMOL4gWxhs2dGkBbJidwUZygSF9RzggJm3qNXxgcBrsnxY0JDTfnbT' -H 'Content-Type: application/json' -d '{\"origin\":\"http://localhost:3000\",\"allowCredentials\":true}')"
     ]
   }
 }

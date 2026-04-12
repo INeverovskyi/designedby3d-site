@@ -47,7 +47,6 @@ export const productSchema = defineType({
       title: "Головне фото",
       type: "image",
       options: { hotspot: true },
-      validation: (rule) => rule.required(),
     }),
     defineField({
       name: "description",
